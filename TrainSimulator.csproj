@@ -81,8 +81,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Helper.cs" />
-    <Compile Include="Assets\IMoveable.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedFloat.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -251,8 +249,10 @@
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\SliderShadow.cs" />
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\SliderVolume.cs" />
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\ToggleToggler.cs" />
-    <Compile Include="Assets\moveCube.cs" />
-    <Compile Include="Assets\test.cs" />
+    <Compile Include="Assets\Scripts\AccelerationController.cs" />
+    <Compile Include="Assets\Scripts\Helper.cs" />
+    <Compile Include="Assets\Scripts\IMoveable.cs" />
+    <Compile Include="Assets\Scripts\moveCube.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Dependencies.txt" />

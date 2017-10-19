@@ -45,11 +45,7 @@ namespace Leap.Unity.Interaction {
     protected int _timeToLive = 1;
     protected int _timeToDie = 0;  // Timer after _timeToLive goes negative before deactivation.
 
-        GameObject redCube;
 
-        void Start() {
-           redCube  = GameObject.Find("REDCUBE");
-        }
 
     public override void Init(IInteractionBehaviour interactionBehaviour, ActivityManager manager) {
       _interactionBehaviour = interactionBehaviour;
@@ -97,14 +93,7 @@ namespace Leap.Unity.Interaction {
 
       // Grasped objects do not intersect the brush layer but are still touching hands.
       if (_interactionBehaviour.IsBeingGrasped) {
-                IMoveable moveable = Helper.TestIfMoveable(redCube.gameObject);
-                if (moveable != null)
-                {  
-                  
-                   moveable.UpdatePosition(_interactionBehaviour.transform.rotation.x);
 
-                    
-                }
                 Revive();
         return;
       }
