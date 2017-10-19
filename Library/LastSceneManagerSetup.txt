@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LeapMotionModules/InteractionEngine/Examples/Scenes/ExampleScene.unity
+- path: Assets/Scenes/ControllsPrototype.unity
   isLoaded: 1
   isActive: 1
