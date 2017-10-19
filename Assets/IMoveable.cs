@@ -1,4 +1,4 @@
-﻿internal interface IMoveable
+﻿public interface IMoveable
 {
-    void UpdatePosition();
+    void UpdatePosition(float x);
 }
