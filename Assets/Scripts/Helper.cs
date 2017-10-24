@@ -14,4 +14,13 @@ public class Helper : MonoBehaviour {
         }
         return null;
     }
+
+    public static IParkBreaks TestIfParkBreaks(GameObject obj) {
+        var scripts = obj.GetComponents<MonoBehaviour>();
+        foreach (var script in scripts) {
+            if (script is IParkBreaks)
+                return (IParkBreaks)script;
+        }
+        return null;
+    }
 }

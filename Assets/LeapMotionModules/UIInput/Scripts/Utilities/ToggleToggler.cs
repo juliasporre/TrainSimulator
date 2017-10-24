@@ -10,6 +10,7 @@ namespace Leap.Unity.InputModule {
     public Color OffColor;
 
     public void SetToggle(Toggle toggle) {
+      Debug.Log("toggle" + toggle.isOn);
       if (toggle.isOn) {
         text.text = "On";
         text.color = Color.white;
