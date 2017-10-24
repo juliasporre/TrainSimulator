@@ -45,7 +45,7 @@ namespace Leap.Unity.InputModule
 
         public bool GetToggle(float rotation)
         {
-            if (Math.Abs(rotation) >= 0.03)
+            if (Math.Abs(rotation) >= 0.1)
             {
                enabled = false;
             }

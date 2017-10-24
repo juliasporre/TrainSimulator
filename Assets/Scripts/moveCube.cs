@@ -15,7 +15,7 @@ public class moveCube : MonoBehaviour, IMoveable {
 	public void UpdatePosition (float dir) {
         //Debug.Log("MOVE");
 
-	    if (Math.Abs(dir) < 0.03) //to be able to stop the train
+	    if (Math.Abs(dir) < 0.1) //to be able to stop the train
 	    {
 	        constantSpeed = 0;
 	    }
@@ -23,17 +23,6 @@ public class moveCube : MonoBehaviour, IMoveable {
 	    {
 	        constantSpeed = dir;
         }
-
-        //Debug.Log("updatePosition" + constantSpeed);
-        //var cvel = Vector3.right * dir;
-        //var tvel = cvel.normalized;
-        //Debug.Log(cvel);
-        //Debug.Log(tvel);
-        //rigidbody.AddForce(cvel);
-        //Debug.Log(dir);
-        //rb.velocity = dir * Vector3.right;
-        //Debug.Log(rb.velocity);
-        //transform.Translate(Vector3.right * dir * Time.deltaTime);
     }
 
     void Update()
