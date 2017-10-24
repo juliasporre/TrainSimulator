@@ -30,6 +30,8 @@ public class AccelerationController : MonoBehaviour {
         parkBreaks = GameObject.Find("ParkingBreak");
         break1 = Helper.TestIfParkBreaks(parkBreaks.gameObject);
 
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
     }
 
     // Update is called once per frame
@@ -39,8 +41,17 @@ public class AccelerationController : MonoBehaviour {
         // Debug.Log("accelertion controller " +  transform.rotation.x);
         //Check if parking breaks are activated
         //when moving at speed and pressingparkbreaksOn, the speed stops to update
+	    if (!break1.GetToggle(transform.rotation.x))
+	    {
+	        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+	    }
+	    else
+	    {
+	        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        }
         if (!break1.GetToggle(transform.rotation.x) && (currentAcc != transform.rotation.x))
         {
+
             currentAcc = transform.rotation.x;
             moveable.UpdatePosition(transform.rotation.x);
             moveable2.UpdatePosition(speed);

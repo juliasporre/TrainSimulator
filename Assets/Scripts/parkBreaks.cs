@@ -17,13 +17,13 @@ namespace Leap.Unity.InputModule
 
         public void SetToggle(Toggle toggle)
         {
-            Debug.Log("Enabled break:" +  enabled);
+            //Debug.Log("Enabled break:" +  enabled);
             
             if (!enabled)
             {
                 return;
             }
-            Debug.Log("in setToggle");
+            //Debug.Log("in setToggle");
             if (toggle.isOn)
             {
                 text.text = "Parking Breaks On";
@@ -40,7 +40,7 @@ namespace Leap.Unity.InputModule
                 breaksOn = false;
                 //to do enable lever
             }
-            Debug.Log(text.text);
+            //Debug.Log(text.text);
         }
 
         public bool GetToggle(float rotation)

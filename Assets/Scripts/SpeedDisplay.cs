@@ -10,7 +10,7 @@ public class SpeedDisplay : MonoBehaviour, IMoveable {
 
     void Start () {
         speed = 0;
-        speedDisplayText.text = "Speed " + speed.ToString();
+        speedDisplayText.text = "Speed " + speed.ToString() + " km/h";
     }
 
     public void UpdatePosition(float dir)
@@ -20,6 +20,6 @@ public class SpeedDisplay : MonoBehaviour, IMoveable {
 
     void Update () {
         //Debug.Log("update " + speed);
-        speedDisplayText.text = "Speed " + speed.ToString();
+        speedDisplayText.text = "Speed " + (speed*5).ToString() + " km/h";
     }
 }

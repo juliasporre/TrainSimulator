@@ -24,7 +24,7 @@ public class moveCube : MonoBehaviour, IMoveable {
 	        constantSpeed = dir;
         }
 
-        Debug.Log("updatePosition" + constantSpeed);
+        //Debug.Log("updatePosition" + constantSpeed);
         //var cvel = Vector3.right * dir;
         //var tvel = cvel.normalized;
         //Debug.Log(cvel);
