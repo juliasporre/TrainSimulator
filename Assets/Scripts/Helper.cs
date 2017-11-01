@@ -23,4 +23,13 @@ public class Helper : MonoBehaviour {
         }
         return null;
     }
+
+	public static IBackForward TestIfBackForward(GameObject obj) {
+		var scripts = obj.GetComponents<MonoBehaviour>();
+		foreach (var script in scripts) {
+			if (script is IBackForward)
+				return (IBackForward)script;
+		}
+		return null;
+	}
 }

@@ -13,6 +13,8 @@ public class AccelerationController : MonoBehaviour {
     float currentAcc;
     GameObject parkBreaks;
     IParkBreaks break1;
+	GameObject backForwardToggle;
+	IBackForward direction;
 
 
    // GameObject parkingBreaks;
@@ -29,6 +31,9 @@ public class AccelerationController : MonoBehaviour {
 
         parkBreaks = GameObject.Find("ParkingBreak");
         break1 = Helper.TestIfParkBreaks(parkBreaks.gameObject);
+
+		backForwardToggle =  GameObject.Find("BackForward");
+		direction = Helper.TestIfBackForward(backForwardToggle.gameObject);
 
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
@@ -53,8 +58,8 @@ public class AccelerationController : MonoBehaviour {
         {
 
             currentAcc = transform.rotation.x;
-            moveable.UpdatePosition(transform.rotation.x);
-            moveable2.UpdatePosition(speed);
+			moveable.UpdatePosition(transform.rotation.x, direction.GetDirection(transform.rotation.x)); //object reference not set to instance of object
+			moveable2.UpdatePosition(speed, direction.GetDirection(transform.rotation.x));
         }
     }
 }

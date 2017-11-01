@@ -12,16 +12,21 @@ public class moveCube : MonoBehaviour, IMoveable {
         rb = GetComponent<Rigidbody>();
        // constantSpeed = 0;
         }
-	public void UpdatePosition (float dir) {
+	public void UpdatePosition (float gas, Boolean direction) {
         //Debug.Log("MOVE");
 
-	    if (Math.Abs(dir) < 0.1) //to be able to stop the train
+		if (gas <= 0) //to be able to stop the train
 	    {
 	        constantSpeed = 0;
 	    }
 	    else
 	    {
-	        constantSpeed = dir;
+			if (direction) {
+				constantSpeed = gas;
+			} else 
+			{
+				constantSpeed = (-1) * gas;
+			}
         }
     }
 

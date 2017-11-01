@@ -14,21 +14,31 @@ public class SpeedDisplay : MonoBehaviour, IMoveable {
         speedDisplayText.text = "Speed " + speed.ToString() + " km/h";
     }
 
-    public void UpdatePosition(float dir)
+	public void UpdatePosition(float gas, Boolean dir)
     {
-        /*if (Math.Abs(dir) < 0.1) //to be able to stop the train
+        if (gas <= 0) //to be able to stop the train
         {
-            speed = 0;
+			speed = 0;
         }
         else {
-            speed = Mathf.Round(dir)*5;
-        }*/
-        speed = Mathf.Round(dir) * 5;
+        
+			if (dir) 
+			{
+				speed = Mathf.Round (gas) * 5;
+			} 
+			else 
+			{
+				speed = Mathf.Round(gas) * -5;
+			}
+		}
+        
         //when speed os 5 0r 10, display 0
+		/*
         if (speed == 5 || speed == -5 || speed == 10 || speed == -10)
         {
             speed = 0;
         }
+        */
     }
 
     void Update () {

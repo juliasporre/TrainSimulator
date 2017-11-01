@@ -253,7 +253,9 @@
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\SliderVolume.cs" />
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\ToggleToggler.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
+    <Compile Include="Assets\Scripts\BackForwardToggle.cs" />
     <Compile Include="Assets\Scripts\Helper.cs" />
+    <Compile Include="Assets\Scripts\IBackForward.cs" />
     <Compile Include="Assets\Scripts\IMoveable.cs" />
     <Compile Include="Assets\Scripts\IParkBreaks.cs" />
     <Compile Include="Assets\Scripts\moveCube.cs" />
