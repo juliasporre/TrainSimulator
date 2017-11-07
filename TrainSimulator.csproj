@@ -254,6 +254,7 @@
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\ToggleToggler.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
     <Compile Include="Assets\Scripts\BackForwardToggle.cs" />
+    <Compile Include="Assets\Scripts\ExtDataDemo.cs" />
     <Compile Include="Assets\Scripts\Helper.cs" />
     <Compile Include="Assets\Scripts\IBackForward.cs" />
     <Compile Include="Assets\Scripts\IMoveable.cs" />
@@ -261,6 +262,22 @@
     <Compile Include="Assets\Scripts\moveCube.cs" />
     <Compile Include="Assets\Scripts\parkBreaks.cs" />
     <Compile Include="Assets\Scripts\SpeedDisplay.cs" />
+    <Compile Include="Assets\Scripts\WiimoteDemo.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\Enums.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\HIDapi.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\Internal\ReadOnlyArray.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\Internal\RegisterReadData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\Wiimote.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\AccelData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\ButtonData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\ClassicControllerData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\IRData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\MotionPlusData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\NunchuckData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\StatusData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\WiimoteData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteData\WiiUProData.cs" />
+    <Compile Include="Assets\Wiimote\Scripts\WiimoteManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Dependencies.txt" />
