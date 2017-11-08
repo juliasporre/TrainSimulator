@@ -262,6 +262,7 @@
     <Compile Include="Assets\Scripts\moveCube.cs" />
     <Compile Include="Assets\Scripts\parkBreaks.cs" />
     <Compile Include="Assets\Scripts\SpeedDisplay.cs" />
+    <Compile Include="Assets\Scripts\TestJoystick.cs" />
     <Compile Include="Assets\Scripts\WiimoteDemo.cs" />
     <Compile Include="Assets\Wiimote\Scripts\Enums.cs" />
     <Compile Include="Assets\Wiimote\Scripts\HIDapi.cs" />
