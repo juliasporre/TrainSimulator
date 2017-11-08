@@ -47,17 +47,17 @@ public class WiimoteDemo : MonoBehaviour {
            }
         } while (ret > 0);
 
-        model.a.enabled = wiimote.Button.a;
-        model.b.enabled = wiimote.Button.b;
-        model.one.enabled = wiimote.Button.one;
-        model.two.enabled = wiimote.Button.two;
-        model.d_up.enabled = wiimote.Button.d_up;
-        model.d_down.enabled = wiimote.Button.d_down;
-        model.d_left.enabled = wiimote.Button.d_left;
-        model.d_right.enabled = wiimote.Button.d_right;
-        model.plus.enabled = wiimote.Button.plus;
-        model.minus.enabled = wiimote.Button.minus;
-        model.home.enabled = wiimote.Button.home;
+        //model.a.enabled = wiimote.Button.a;
+        //model.b.enabled = wiimote.Button.b;
+        //model.one.enabled = wiimote.Button.one;
+        //model.two.enabled = wiimote.Button.two;
+        //model.d_up.enabled = wiimote.Button.d_up;
+        //model.d_down.enabled = wiimote.Button.d_down;
+        //model.d_left.enabled = wiimote.Button.d_left;
+        //model.d_right.enabled = wiimote.Button.d_right;
+        //model.plus.enabled = wiimote.Button.plus;
+        //model.minus.enabled = wiimote.Button.minus;
+        //model.home.enabled = wiimote.Button.home;
 
         if (wiimote.current_ext != ExtensionController.MOTIONPLUS)
             model.rot.localRotation = initial_rotation;
