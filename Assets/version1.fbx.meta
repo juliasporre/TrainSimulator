@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 0fd3219d8c1758a4ba59cc80b693a25e
+timeCreated: 1510144741
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: pCube1
+    100002: pCube10
+    100004: pCube11
+    100006: pCube14
+    100008: pCube15
+    100010: pCube16
+    100012: pCube17
+    100014: pCube18
+    100016: pCube18 1
+    100018: pCube19
+    100020: pCube2
+    100022: pCube20
+    100024: pCube3
+    100026: pCube4
+    100028: pCube6
+    100030: pCube7
+    100032: pCube9
+    100034: pCylinder1
+    100036: pCylinder2
+    100038: pCylinder3
+    100040: pCylinder4
+    100042: pCylinder5
+    100044: pCylinder6
+    100046: pDisc1
+    100048: pDisc2
+    100050: pDisc3
+    100052: polySurface1
+    100054: polySurface2
+    100056: polySurface2 1
+    100058: polySurface3
+    100060: polySurface4
+    100062: polySurface5
+    100064: pSphere1
+    100066: pSphere2
+    100068: pSphere3
+    100070: pTorus1
+    100072: pTorus2
+    100074: SideWall
+    100076: Table
+    100078: transform1
+    100080: transform10
+    100082: transform11
+    100084: transform12
+    100086: transform13
+    100088: transform14
+    100090: transform15
+    100092: transform16
+    100094: transform17
+    100096: transform18
+    100098: transform19
+    100100: transform2
+    100102: transform20
+    100104: transform21
+    100106: transform22
+    100108: transform23
+    100110: transform3
+    100112: transform4
+    100114: transform5
+    100116: transform6
+    100118: transform7
+    100120: transform8
+    100122: transform9
+    100124: //RootNode
+    400000: pCube1
+    400002: pCube10
+    400004: pCube11
+    400006: pCube14
+    400008: pCube15
+    400010: pCube16
+    400012: pCube17
+    400014: pCube18
+    400016: pCube18 1
+    400018: pCube19
+    400020: pCube2
+    400022: pCube20
+    400024: pCube3
+    400026: pCube4
+    400028: pCube6
+    400030: pCube7
+    400032: pCube9
+    400034: pCylinder1
+    400036: pCylinder2
+    400038: pCylinder3
+    400040: pCylinder4
+    400042: pCylinder5
+    400044: pCylinder6
+    400046: pDisc1
+    400048: pDisc2
+    400050: pDisc3
+    400052: polySurface1
+    400054: polySurface2
+    400056: polySurface2 1
+    400058: polySurface3
+    400060: polySurface4
+    400062: polySurface5
+    400064: pSphere1
+    400066: pSphere2
+    400068: pSphere3
+    400070: pTorus1
+    400072: pTorus2
+    400074: SideWall
+    400076: Table
+    400078: transform1
+    400080: transform10
+    400082: transform11
+    400084: transform12
+    400086: transform13
+    400088: transform14
+    400090: transform15
+    400092: transform16
+    400094: transform17
+    400096: transform18
+    400098: transform19
+    400100: transform2
+    400102: transform20
+    400104: transform21
+    400106: transform22
+    400108: transform23
+    400110: transform3
+    400112: transform4
+    400114: transform5
+    400116: transform6
+    400118: transform7
+    400120: transform8
+    400122: transform9
+    400124: //RootNode
+    2300000: pCube10
+    2300002: pCube14
+    2300004: pCube15
+    2300006: pCube16
+    2300008: pCube18
+    2300010: pCube20
+    2300012: pCube9
+    2300014: pCylinder2
+    2300016: pCylinder6
+    2300018: polySurface2 1
+    2300020: polySurface3
+    2300022: polySurface4
+    2300024: polySurface5
+    2300026: pSphere2
+    2300028: pSphere3
+    2300030: SideWall
+    3300000: pCube10
+    3300002: pCube14
+    3300004: pCube15
+    3300006: pCube16
+    3300008: pCube18
+    3300010: pCube20
+    3300012: pCube9
+    3300014: pCylinder2
+    3300016: pCylinder6
+    3300018: polySurface2 1
+    3300020: polySurface3
+    3300022: polySurface4
+    3300024: polySurface5
+    3300026: pSphere2
+    3300028: pSphere3
+    3300030: SideWall
+    4300000: pCube15
+    4300002: pSphere2
+    4300004: pCube9
+    4300006: pCube10
+    4300008: SideWall
+    4300010: polySurface4
+    4300012: polySurface5
+    4300014: polySurface2
+    4300016: pCube14
+    4300018: pCylinder2
+    4300020: pCylinder6
+    4300022: pCube16
+    4300024: pSphere3
+    4300026: pCube18
+    4300028: polySurface3
+    4300030: pCube20
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

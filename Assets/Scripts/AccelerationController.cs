@@ -42,11 +42,16 @@ public class AccelerationController : MonoBehaviour {
     // Update is called once per frame
     void Update ()
 	{
-	    float speed = (30) * transform.rotation.x;
-        // Debug.Log("accelertion controller " +  transform.rotation.x);
+	    float speed = transform.rotation.x;
+
+
+         Debug.Log("accelertion controller transform rotation " +  transform.rotation.x);
+        //varannan gång blir det 0, varannan gång rätt värde
+
         //Check if parking breaks are activated
         //when moving at speed and pressingparkbreaksOn, the speed stops to update
-	    if (!break1.GetToggle(transform.rotation.x))
+        
+        if (!break1.GetToggle(transform.rotation.x))
 	    {
 	        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 	    }
@@ -54,12 +59,14 @@ public class AccelerationController : MonoBehaviour {
 	    {
 	        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
-        if (!break1.GetToggle(transform.rotation.x) && (currentAcc != transform.rotation.x))
+        if (!break1.GetToggle(speed) && (currentAcc != speed))
         {
-
+            Debug.Log("set speed ");
             currentAcc = transform.rotation.x;
-			moveable.UpdatePosition(transform.rotation.x, direction.GetDirection(transform.rotation.x)); //object reference not set to instance of object
-			moveable2.UpdatePosition(speed, direction.GetDirection(transform.rotation.x));
+            var dir = direction.GetDirection(speed);
+
+            moveable.UpdatePosition(speed, dir); //object reference not set to instance of object, doesn't run method
+			moveable2.UpdatePosition(speed, dir);
         }
     }
 }

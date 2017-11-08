@@ -13,7 +13,7 @@ public class moveCube : MonoBehaviour, IMoveable {
        // constantSpeed = 0;
         }
 	public void UpdatePosition (float gas, Boolean direction) {
-        //Debug.Log("MOVE");
+        Debug.Log("MOVE");
 
 		if (gas <= 0) //to be able to stop the train
 	    {
@@ -22,12 +22,13 @@ public class moveCube : MonoBehaviour, IMoveable {
 	    else
 	    {
 			if (direction) {
-				constantSpeed = gas;
+				constantSpeed = gas*5;
 			} else 
 			{
 				constantSpeed = (-1) * gas;
 			}
         }
+        Debug.Log("constantSpeed "+constantSpeed);
     }
 
     void Update()
