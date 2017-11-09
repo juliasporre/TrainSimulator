@@ -8,13 +8,15 @@ public class AccelerationController : MonoBehaviour {
     
     IMoveable moveable;
     GameObject redCube;
-    IMoveable moveable2;
-    GameObject speedDisplay;
+    //IMoveable moveable2;
+   // GameObject speedDisplay;
     float currentAcc;
     GameObject parkBreaks;
     IParkBreaks break1;
 	GameObject backForwardToggle;
 	IBackForward direction;
+    GameObject speedMeter;
+    ISpeedMeter meter;
     Vector3 wmpOffset;
 
 
@@ -26,14 +28,17 @@ public class AccelerationController : MonoBehaviour {
         redCube = GameObject.Find("REDCUBE");
         moveable = Helper.TestIfMoveable(redCube.gameObject);
 
-        speedDisplay = GameObject.Find("SpeedDisplay");
-        moveable2 = Helper.TestIfMoveable(speedDisplay.gameObject);
+        //speedDisplay = GameObject.Find("SpeedDisplay");
+        //moveable2 = Helper.TestIfMoveable(speedDisplay.gameObject);
 
         parkBreaks = GameObject.Find("ParkingBreak");
         break1 = Helper.TestIfParkBreaks(parkBreaks.gameObject);
 
 		backForwardToggle =  GameObject.Find("BackForward");
 		direction = Helper.TestIfBackForward(backForwardToggle.gameObject);
+
+        speedMeter = GameObject.Find("indicator");
+        meter = Helper.TestIfSpeedMeter(speedMeter.gameObject);
 
         //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         wmpOffset = Vector3.zero; 
@@ -71,7 +76,7 @@ public class AccelerationController : MonoBehaviour {
 
 
             //Vector3 offset = new Vector3(Mathf.Abs(speed-currentAcc), 0, 0);
-            transform.eulerAngles = new Vector3(speed-currentAcc*-50,0,0);
+            transform.eulerAngles = new Vector3(speed-currentAcc*-60,0,0);
 
 
 
@@ -79,7 +84,8 @@ public class AccelerationController : MonoBehaviour {
             //transform.Rotate(wmpOffset);
             currentAcc = speed;
             moveable.UpdatePosition(speed, dir); //object reference not set to instance of object, doesn't run method
-			moveable2.UpdatePosition(speed, dir);
+			//moveable2.UpdatePosition(speed, dir);
+            meter.UpdateSpeedMeter(speed);
         }
     }
 }

@@ -32,4 +32,13 @@ public class Helper : MonoBehaviour {
 		}
 		return null;
 	}
+
+    public static ISpeedMeter TestIfSpeedMeter(GameObject obj) {
+        var scripts = obj.GetComponents<MonoBehaviour>();
+        foreach (var script in scripts) {
+            if (script is ISpeedMeter)
+                return (ISpeedMeter)script;
+        }
+        return null;
+    }
 }

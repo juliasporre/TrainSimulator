@@ -54,6 +54,7 @@ namespace Leap.Unity.InputModule
                 enabled = true;
             }
             return breaksOn;
+            return false; //for debugging purposes disable parking break function
         }
 
     }
