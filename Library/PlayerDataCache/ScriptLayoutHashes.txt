@@ -153,6 +153,7 @@ d99d00cc779dc4a3c7b086ae42115b94 Assembly-CSharp.dll:Leap.Unity.SceneSettings
 64d87c627d8d4216a30456d0b483bda3 Assembly-CSharp.dll:Leap.Unity.InputModule.LeapInputModule
 fd9a204a03e1ea7c4d4927ff4cd31a0f Assembly-CSharp.dll:Leap.Unity.LeapVRCameraControl
 387f7f74fd3b9f6a11def026098e367c Assembly-CSharp.dll:Leap.Unity.RuntimeGizmos.RuntimeColliderGizmos
+dd0c8521a729b905dfb15814b218937d Assembly-CSharp.dll:Leap.Unity.InputModule.BackForwardToggle
 06f51010a078b57b7b4dda90ba2cc1d5 Assembly-CSharp.dll:Leap.Unity.HandFader
 31524221f7881d3721570533bccf3fc1 Assembly-CSharp.dll:Leap.Unity.LeapRTS
 2220ddf26983420fa9e3a7681f419f0b Assembly-CSharp.dll:Leap.Unity.DebugHand
@@ -197,6 +198,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
+309e0d0d5a921e45606a94b82b89cb2e Assembly-CSharp.dll:.WiimoteDemo
 62044503c641cd88c0b0d546d9de78c6 Assembly-CSharp.dll:Leap.Unity.Interaction.ActivityMonitor
 540ce0f341c4ebabefbd0b62fa3f2693 Assembly-CSharp.dll:Leap.Unity.PolyHand
 d31ea9e36961f88aca273cf105190072 Assembly-CSharp.dll:Leap.Unity.Interaction.SuspensionControllerDefault
@@ -204,7 +206,9 @@ a1365a5740a6922b1f41d8ce77d1e5e8 Assembly-CSharp.dll:Leap.Unity.MinimalHand
 ac78702352b23eea116ae8cd263cafbf Assembly-CSharp.dll:Leap.Unity.ExtendedFingerDetector
 540ce0f341c4ebabefbd0b62fa3f2693 Assembly-CSharp.dll:Leap.Unity.SkeletalHand
 64c758d4b69504a7d580c33ca63474b5 Assembly-CSharp.dll:Leap.Unity.RigidFinger
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpeedMeter
 9cfb6a864f60abb43963a22fb2313562 Assembly-CSharp.dll:Leap.Unity.DetectionExamples.MengerSponge
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TestJoystick
 824936b0a45067a9f94372660f23187d Assembly-CSharp.dll:Leap.Unity.Attachments.Transition
 1a472413d45ba431c84b9a0dd4fe23cf Assembly-CSharp.dll:Leap.Unity.Interaction.InteractionBrushBone
 4fdae900abf29ef9860818aa945aab1c Assembly-CSharp.dll:Leap.Unity.DetectorLogicGate
@@ -212,3 +216,4 @@ ac78702352b23eea116ae8cd263cafbf Assembly-CSharp.dll:Leap.Unity.ExtendedFingerDe
 160e05a78f694f5f9f7a7aa2e15927e1 Assembly-CSharp.dll:Leap.Unity.Attachments.AttachmentController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.moveCube
 6fae563d5c2cfb274a1af8b0e5fa44a4 Assembly-CSharp.dll:Leap.Unity.PolyFinger
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExtDataDemo
