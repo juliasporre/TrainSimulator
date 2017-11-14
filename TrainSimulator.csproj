@@ -253,6 +253,19 @@
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\SliderShadow.cs" />
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\SliderVolume.cs" />
     <Compile Include="Assets\LeapMotionModules\UIInput\Scripts\Utilities\ToggleToggler.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\DemoScript.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
+    <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />
+    <Compile Include="Assets\MagicMirror\Prefab\MirrorScript.cs" />
+    <Compile Include="Assets\Materials\mirrors\MirrorReflection.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
     <Compile Include="Assets\Scripts\BackForwardToggle.cs" />
     <Compile Include="Assets\Scripts\ExtDataDemo.cs" />
@@ -295,6 +308,12 @@
     <None Include="Assets\LeapMotion\Version.txt" />
     <None Include="Assets\LeapMotion\readme.txt" />
     <None Include="Assets\LeapMotionModules\DetectionExamples\Shaders\LeapPinchLine.shader" />
+    <None Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShader.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShaderBumpMap.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShaderOld.shader" />
+    <None Include="Assets\MagicMirror\Prefab\Readme.txt" />
+    <None Include="Assets\Materials\mirrors\leftMirror.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -109,9 +109,6 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -172,6 +169,12 @@
     <None Include="Assets\LeapMotion\Version.txt" />
     <None Include="Assets\LeapMotion\readme.txt" />
     <None Include="Assets\LeapMotionModules\DetectionExamples\Shaders\LeapPinchLine.shader" />
+    <None Include="Assets\MagicMirror\Demo\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShader.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShaderBumpMap.shader" />
+    <None Include="Assets\MagicMirror\Prefab\MirrorShaderOld.shader" />
+    <None Include="Assets\MagicMirror\Prefab\Readme.txt" />
+    <None Include="Assets\Materials\mirrors\leftMirror.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
