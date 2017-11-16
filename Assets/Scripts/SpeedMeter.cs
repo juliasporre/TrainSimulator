@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class SpeedMeter : MonoBehaviour, ISpeedMeter
 {
 
-    private static float minAngle = -45f;
+    private static float minAngle = -25f;
     private static float maxAngle = 180f;
 
 	public void UpdateSpeedMeter(float gas) {
