@@ -8,36 +8,34 @@ public class moveCube : MonoBehaviour, IMoveable {
 
     Rigidbody rb;
     private static float constantSpeed;
+
+
     void Start() {
+
         rb = GetComponent<Rigidbody>();
-       // constantSpeed = 0;
-        }
+    }
 	public void UpdatePosition (float gas, Boolean direction) {
-        //Debug.Log("MOVE");
 
 		if (gas <= 0) //to be able to stop the train
 	    {
 	        constantSpeed = 0;
-	    }
+        }
 	    else
 	    {
-			if (direction) {
+			if (direction) { //Moving forward
 				constantSpeed = gas*5;
-			} else 
+			}
+            else //Moving backwards
 			{
 				constantSpeed = (-1) * gas;
 			}
         }
-       // Debug.Log("constantSpeed "+constantSpeed);
     }
 
     void Update()
     {
-        // Debug.Log("update " + constantSpeed);
-        // Debug.Log("vecotor " + Vector3.right);
-
+        //Sets the velocity
         rb.velocity = (-30)* constantSpeed * Vector3.forward;
-        //Debug.Log(rb.velocity);
     }
 
 
