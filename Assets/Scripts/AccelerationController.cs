@@ -13,9 +13,6 @@ public class AccelerationController : MonoBehaviour {
     IParkBreaks break1;
 	GameObject backForwardToggle;
 	IBackForward direction;
-    GameObject speedMeter;
-    ISpeedMeter meter;
-
 
     //Sound
     public AudioSource sourceMoving;
@@ -34,12 +31,10 @@ public class AccelerationController : MonoBehaviour {
 		backForwardToggle =  GameObject.Find("BackForward");
 		direction = Helper.TestIfBackForward(backForwardToggle.gameObject);
 
-        speedMeter = GameObject.Find("indicator");
-        meter = Helper.TestIfSpeedMeter(speedMeter.gameObject);
-
-
         //Starts still
+        sourceMoving.Play();
         sourceStill.Play();
+        sourceMoving.Pause();
 
     }
 
@@ -47,20 +42,6 @@ public class AccelerationController : MonoBehaviour {
     void Update ()
 	{
         float speed = Input.GetAxisRaw("Horizontal");
-
-        //Sets sound depending on if moving or not
-        if (speed == 0 && playMoving == true)
-        {
-            playMoving = false;
-            sourceStill.Play();
-            sourceMoving.Pause();
-        }
-        else if (speed != 0 && playMoving == false)
-        {
-            playMoving = true;
-            sourceMoving.Play();
-            sourceStill.Pause();
-        }
 
         if (!break1.GetToggle(speed) && Mathf.Abs(currentSpeed - speed) > 0.01)
         {
@@ -77,8 +58,20 @@ public class AccelerationController : MonoBehaviour {
             //Updates the speed
             moveable.UpdatePosition(speed, dir);
 
-            //Updatesd speed meter
-            meter.UpdateSpeedMeter(speed);
+            //Sets sound depending on if moving or not
+            if (speed == 0 && playMoving == true)
+            {
+                playMoving = false;
+                sourceStill.Play();
+                sourceMoving.Pause();
+            }
+            else if (speed != 0 && playMoving == false)
+            {
+                playMoving = true;
+                sourceMoving.Play();
+                sourceStill.Pause();
+            }
+
         }
     }
 }
